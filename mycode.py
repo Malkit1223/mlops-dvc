@@ -8,6 +8,11 @@ data={"Name":['Alice','Bob','Charlie'],
 df=pd.DataFrame(data)
 new_row_loc={"Name":"B1","Age":35,"City":"City1"}
 df.loc[len(df.index)]=new_row_loc
+
+new_row_loc2={"Name":"B2","Age":33,"City":"City2"}
+df.loc[len(df.index)]=new_row_loc2
+
+
 data_dir="data"
 os.makedirs(data_dir,exist_ok=True)
 file_path=os.path.join(data_dir,'sample_data.csv')
